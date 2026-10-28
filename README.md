@@ -7,7 +7,6 @@ Os erros nas charadas aumentam o tempo de perseguição e o número de goblins.
 
 ## Instalar e executar
 
-Versões testadas: Python 3.13.7, Pygame Zero 1.2.1 e Pygame 2.6.1.
 Instale o Python 3.13 e abra o terminal na pasta do projeto.
 
 ### macOS / Linux
@@ -41,34 +40,3 @@ Mantenha `images/`, `music/` e `sounds/` junto dos arquivos Python.
 - **E** ou botão **Espada:** afastar Gollum próximo, com recarga de 5 segundos.
 - **ESC:** abrir ou fechar o menu durante a partida.
 - **R:** reiniciar a tentativa durante o jogo.
-
-Na travessia final, a espada fica indisponível. Mesmo invisível, Bilbo não
-pode encostar nos goblins. Alcance a saída à direita para vencer.
-O menu permite ligar e desligar música e efeitos separadamente.
-
-## Organização
-
-| Arquivo / pasta | Responsabilidade |
-| --- | --- |
-| `game.py` | Entrada do PgZero, estados, charadas e sequência da partida. |
-| `level.py` | Matriz do mapa, desenho dos tiles e colisão com paredes. |
-| `characters.py` | Movimento, animações, perseguição e passeio dos goblins. |
-| `riddles.py` | Bancos de perguntas e respostas. |
-| `ui.py` | Menu, balões, placar, botões e tutoriais. |
-| `audio.py` | Trilhas, efeitos, passos e preferências de som. |
-| `images/` | Frames PNG e objetos já preparados para uso. |
-| `music/` | Quatro trilhas de fundo WAV. |
-| `sounds/` | Doze efeitos WAV. |
-
-Não é preciso recortar sprites nem gerar arquivos antes de jogar.
-A pasta `.venv/` é criada localmente e não deve ser enviada ao GitHub.
-
-## Recursos visuais e áudio
-
-O cenário usa tiles do conjunto **Kenney Tiny Dungeon**. As imagens de
-personagens e objetos foram fornecidas durante o desenvolvimento e preparadas
-em PNG; as animações usam arquivos individuais. A aparência invisível de Bilbo
-é uma variação dos mesmos frames.
-
-As músicas e os efeitos foram sintetizados para este projeto, sem amostras ou
-gravações externas. O jogo é um projeto de estudo inspirado em *O Hobbit*.
